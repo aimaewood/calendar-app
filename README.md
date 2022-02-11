@@ -1,4 +1,4 @@
-# Day view calendar app
+# README.md - Day View Calendar App
 
 ## Description
 
