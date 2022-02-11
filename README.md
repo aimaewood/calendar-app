@@ -1,4 +1,4 @@
-#Day view calendar app
+# Day view calendar app
 
 ## Description
 
