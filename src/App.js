@@ -21,14 +21,12 @@ function App() {
 
     return (
         <div className="app">
-            {/*the DateHeader component allows the user to set the desired date and
-            displays that date prominently at the top of the UI*/}
+            {/*DateHeader allows the user to set the desired date and displays that date at the top of the UI*/}
             <DateHeader date={"Friday 11th February 2022"}/>
             {/*with more time, I would have:
-          a) turned the form below into a component
-          b) written a function to generate all the <option> tags within the form
-          c) written form validation requiring the title input to be a string of some max length
-          and requiring that all fields be completed before form submission*/}
+                a) turned the form below into a component
+                b) written a function to generate all the <option> tags within the form
+                c) written some form validation */}
             <form className="add-event-form">
                 <label htmlFor="title">Event title:</label>
                 <input name="title" onChange={(event) => {
