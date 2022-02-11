@@ -4,7 +4,10 @@
 }
 .app{
   margin: 40px;
-
+}
+.calendar-container{
+  margin-bottom: 50px;
+  position: relative;
 }
 .hour-block{
   height:60px;
