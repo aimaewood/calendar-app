@@ -11,7 +11,7 @@
 }
 .hour-block{
   height:60px;
-  border: solid black 2px;
+  border: solid black 1px;
   position:relative;
   z-index: 1;
   max-width: 60%;
