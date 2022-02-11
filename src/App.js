@@ -1,23 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
-
 function App() {
+
+  const hourBlocks = []
+  for(let i=0; i<24; i++ ){hourBlocks.push(i)}
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+
+      <div className="header">
+         <h1>Friday 11th February 2022</h1>
+         <h3>Schedule:</h3>
+         <hr />
+      </div>
+
+      <div className="calendar-container">
+          {/*put addNewEvent form here if time allows, and style calendar-container using display:flex
+        so that the form and calendar hour-blocks are displayed side by side*/}
+          {hourBlocks.map((hour, index) => {
+              return(
+                  <div key={index} className="hour-block">{hour.toString() + ":00"}</div>
+              )
+          })}
+      </div>
+
     </div>
   );
 }
