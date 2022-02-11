@@ -1,3 +1,5 @@
+#Day view calendar app
+
 ## Description
 
 This day-view calendar app features a lightweight UI that displays the specified date, twenty-four hour-long time blocks that can be overlaid with events, and a form through which the user can add a new event to the calendar.
