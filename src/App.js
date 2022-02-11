@@ -1,5 +1,6 @@
 import {useState} from "react";
 import './App.css';
+import {DateHeader} from "./components/DateHeader";
 function App() {
 
   let [events, updateEvents] = useState([{title: "Aerial hoop class", start: 18, duration: 1.5}, {title: "Laka Interview", start: 14, duration: 1}, {title: "Yoga", start: 9, duration:2}])
@@ -9,11 +10,7 @@ function App() {
   return (
     <div className="app">
 
-      <div className="header">
-         <h1>Friday 11th February 2022</h1>
-         <h3>Schedule:</h3>
-         <hr />
-      </div>
+      <DateHeader date={Friday 11th February 2022} />
 
       <div className="calendar-container">
           {/*put addNewEvent form here if time allows, and style calendar-container using display:flex
